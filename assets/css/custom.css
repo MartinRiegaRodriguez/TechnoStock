@@ -1,0 +1,67 @@
+/* =============================================================================
+   TecnoStock - Estilos Personalizados
+   Complementa Bootstrap 5 sin sobreescribir su sistema de diseño.
+   ============================================================================= */
+
+:root {
+    --ts-primary: #0d6efd;
+    --ts-danger: #dc3545;
+    --ts-warning: #ffc107;
+    --ts-success: #198754;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #2b3035;
+}
+
+/* Tarjetas con sombras suaves y bordes limpios */
+.card {
+    border-radius: 0.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+}
+
+/* Alertas de stock bajo visualmente destacadas */
+.badge-stock-bajo {
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.4em 0.65em;
+    border-radius: 0.35rem;
+    animation: pulseAlert 2s infinite ease-in-out;
+}
+
+.table-row-stock-critico {
+    background-color: rgba(220, 53, 69, 0.08) !important;
+}
+
+@keyframes pulseAlert {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+/* Tablas con scroll horizontal responsivo */
+.table th {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Transiciones suaves en botones */
+.btn {
+    border-radius: 0.45rem;
+    transition: all 0.2s ease-in-out;
+}
